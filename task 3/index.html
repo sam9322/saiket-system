@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Responsive Layout Grid</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Responsive Layout Grid Container -->
+    <div class="layout-container">
+
+        <!-- 1. Header Section -->
+        <header class="header">
+            <div class="header-brand">
+                <div class="brand-icon">Nexus</div>
+                <span class="brand-name">Portal</span>
+            </div>
+            
+            <nav class="header-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#docs" class="nav-link">Docs</a>
+            </nav>
+
+            <div class="header-user">
+                <span class="user-status-dot"></span>
+                <span class="user-name">Samiksha</span>
+            </div>
+        </header>
+
+        <!-- 2. Sidebar Section -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Navigation Menu</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#dashboard" class="active"><span class="menu-icon">&#9633;</span> Dashboard</a></li>
+                <li><a href="#analytics"><span class="menu-icon">&#9651;</span> Analytics</a></li>
+                <li><a href="#projects"><span class="menu-icon">&#9671;</span> Projects</a></li>
+                <li><a href="#messages"><span class="menu-icon">&#9993;</span> Messages</a></li>
+                <li><a href="#settings"><span class="menu-icon">&#9881;</span> Settings</a></li>
+            </ul>
+
+            <div class="sidebar-widget">
+                <h4>System Status</h4>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 82%;"></div>
+                </div>
+                <p>Storage: 82% Used</p>
+            </div>
+        </aside>
+
+        <!-- 3. Main Content Area Section -->
+        <main class="main-content">
+            <!-- Welcome Banner -->
+            <section class="content-banner">
+                <h2>Responsive Grid Layout Dashboard</h2>
+                <p>
+                    Resize your browser window or view on a mobile device to witness the seamless transition from a multi-column desktop grid to a single-column stacked layout.
+                </p>
+            </section>
+
+            <!-- Cards Grid Section -->
+            <section class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-tag">Analytics</span>
+                        <span class="card-value">+28.5%</span>
+                    </div>
+                    <h3>Total Traffic</h3>
+                    <p>142,850 Monthly Active Users across global servers.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-tag tag-green">Performance</span>
+                        <span class="card-value">99.9%</span>
+                    </div>
+                    <h3>Server Uptime</h3>
+                    <p>High availability with zero recorded downtime this month.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-tag tag-purple">Responsive</span>
+                        <span class="card-value">CSS Grid</span>
+                    </div>
+                    <h3>Media Queries</h3>
+                    <p>Fluid breakpoints configured at 768px and 1024px viewport widths.</p>
+                </div>
+            </section>
+
+            <!-- Content Body Section -->
+            <section class="content-block">
+                <h3>About This Layout</h3>
+                <p>
+                    This webpage layout utilizes modern CSS Grid with explicit grid areas (<code>grid-template-areas</code>). On desktop viewports, the grid is configured into four distinct zones: a full-width <strong>Header</strong> at the top, a fixed-width <strong>Sidebar</strong> on the left, a flexible <strong>Main Content Area</strong> on the right, and a full-width <strong>Footer</strong> at the bottom.
+                </p>
+                <p>
+                    When viewed on mobile devices (screens under 768px), CSS Media Queries automatically switch the layout into a vertical stacked structure for optimal readability and mobile navigation.
+                </p>
+            </section>
+        </main>
+
+        <!-- 4. Footer Section -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p>&copy; 2026 Nexus Portal. Designed with Responsive CSS Grid & Media Queries.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a> &bull; 
+                <a href="#terms">Terms of Service</a> &bull; 
+                <a href="#support">Support</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

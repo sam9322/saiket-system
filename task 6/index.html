@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AuraCloud AI - Next-Generation Intelligent Cloud & Automation Platform for Modern Engineers.">
+    <title>AuraCloud AI - Next Gen Intelligent Platform</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">&#9883;</span>
+                <span class="logo-text">AuraCloud</span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav id="nav-menu" class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#demo" class="nav-link">Live Demo</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="mobile-cta">
+                    <button class="btn btn-primary" onclick="openModal()">Get Started</button>
+                </div>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-secondary nav-btn-desktop" onclick="openModal()">Sign In</button>
+                <button class="btn btn-primary nav-btn-desktop" onclick="openModal()">Start Free Trial</button>
+                
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                
+                <div class="hero-badge-wrapper">
+                    <span class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Next-Gen Platform Release 3.0</span>
+                    </span>
+                </div>
+
+                <h1 class="hero-title">
+                    Build, Scale & Automate <span class="gradient-text">Intelligence</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Empower your team with real-time cloud analytics, automated workflow engine, and enterprise-grade security built for modern engineering.
+                </p>
+
+                <!-- Interactive Hero Lead Form -->
+                <form id="hero-email-form" class="hero-form">
+                    <div class="form-input-group">
+                        <input 
+                            type="email" 
+                            id="hero-email" 
+                            class="form-input" 
+                            placeholder="Enter your work email..." 
+                            required
+                        >
+                        <button type="submit" class="btn btn-primary btn-hero">
+                            <span>Claim Early Access</span>
+                            <span aria-hidden="true">&rarr;</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Hero Product Showcase Image -->
+                <figure class="hero-figure">
+                    <div class="image-glass-frame">
+                        <img src="landing_hero_tech.png" alt="AuraCloud AI Interface Mockup" class="hero-image">
+                    </div>
+                    <figcaption class="hero-figcaption">Interactive AuraCloud Dashboard Console v3.0</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Interactive Color Theme / Demo Section -->
+        <section id="demo" class="demo-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Interactive Customizer</span>
+                    <h2>Choose Your Workspace Theme</h2>
+                    <p>Customize the workspace gradient lighting in real-time to match your IDE setup.</p>
+                </div>
+
+                <div class="theme-selector-container">
+                    <div class="theme-buttons">
+                        <button class="theme-btn active" data-theme="indigo">
+                            <span class="color-dot dot-indigo"></span>
+                            <span>Midnight Indigo</span>
+                        </button>
+                        <button class="theme-btn" data-theme="purple">
+                            <span class="color-dot dot-purple"></span>
+                            <span>Cyber Purple</span>
+                        </button>
+                        <button class="theme-btn" data-theme="cyan">
+                            <span class="color-dot dot-cyan"></span>
+                            <span>Electric Cyan</span>
+                        </button>
+                    </div>
+
+                    <div id="preview-card" class="preview-card theme-indigo">
+                        <div class="preview-card-header">
+                            <span class="card-status-dot"></span>
+                            <span id="preview-theme-title">Current Theme: Midnight Indigo</span>
+                        </div>
+                        <h3>Real-time Analytics Engine Active</h3>
+                        <p>Latency: 14ms &bull; System Health: 99.98% &bull; Nodes: 128 Active</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section id="features" class="features-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Core Features</span>
+                    <h2>Engineered for High-Performance Teams</h2>
+                    <p>Everything you need to deploy, monitor, and scale modern web applications effortlessly.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">&#9889;</div>
+                        <h3>Instant Deployment</h3>
+                        <p>Push to Git and deploy globally across 300+ edge locations in less than 5 seconds.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128200;</div>
+                        <h3>Predictive Analytics</h3>
+                        <p>AI-driven resource scaling automatically predicts traffic spikes and adjusts capacity.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">&#128274;</div>
+                        <h3>Zero-Trust Security</h3>
+                        <p>End-to-end encryption, automated compliance checks, and built-in DDoS defense.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Flexible Plans</span>
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p>Choose the plan that best fits your project needs. Upgrade or cancel anytime.</p>
+                    
+                    <!-- Billing Toggle Button -->
+                    <div class="billing-toggle-container">
+                        <span class="toggle-label">Monthly</span>
+                        <label class="switch">
+                            <input type="checkbox" id="billing-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Starter</h3>
+                            <p>Perfect for solo developers and small side projects.</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span id="price-starter" class="price-amount">19</span>
+                            <span id="period-starter" class="price-period">/mo</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>&check; 5 Production Projects</li>
+                            <li>&check; 100GB Global Bandwidth</li>
+                            <li>&check; Standard Analytics</li>
+                            <li>&check; Community Support</li>
+                        </ul>
+                        <button class="btn btn-secondary btn-block" onclick="openModal()">Get Started</button>
+                    </div>
+
+                    <!-- Pro Plan (Featured) -->
+                    <div class="pricing-card featured">
+                        <div class="popular-tag">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Pro Business</h3>
+                            <p>For growing startup teams scaling digital products.</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span id="price-pro" class="price-amount">49</span>
+                            <span id="period-pro" class="price-period">/mo</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>&check; Unlimited Projects</li>
+                            <li>&check; 1TB Bandwidth</li>
+                            <li>&check; Advanced AI Predictions</li>
+                            <li>&check; 24/7 Priority Support</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="openModal()">Start Free Trial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter & Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="contact-box">
+                    <h2>Stay Ahead of the Cloud Curve</h2>
+                    <p>Subscribe to our weekly engineering newsletter for platform updates and optimization guides.</p>
+                    
+                    <form id="newsletter-form" class="contact-form">
+                        <div class="contact-input-row">
+                            <input 
+                                type="text" 
+                                id="contact-name" 
+                                class="form-input" 
+                                placeholder="Your Name" 
+                                required
+                            >
+                            <input 
+                                type="email" 
+                                id="contact-email" 
+                                class="form-input" 
+                                placeholder="Your Email Address" 
+                                required
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Form Dialog -->
+    <div id="modal-backdrop" class="modal-backdrop hidden" onclick="closeModal()">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Get Started with AuraCloud</h3>
+            <p>Enter your details below to activate your 14-day free trial.</p>
+            
+            <form id="modal-form" class="modal-form">
+                <input type="text" class="form-input" placeholder="Full Name" required>
+                <input type="email" class="form-input" placeholder="Work Email" required>
+                <button type="submit" class="btn btn-primary btn-block">Activate Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-logo">
+                    <span class="logo-icon">&#9883;</span>
+                    <span class="logo-text">AuraCloud</span>
+                </div>
+                <p>Empowering digital innovation with intelligent cloud infrastructure.</p>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 AuraCloud Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5: TaskFlow To-Do List Application</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Main Container -->
+    <main class="todo-card">
+        
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="header-title-row">
+                <h1 class="app-title">TaskFlow</h1>
+                <span class="app-badge">Mini Project</span>
+            </div>
+            <p class="app-subtitle">Organize your daily tasks, stay productive, and get things done.</p>
+        </header>
+
+        <!-- Task Input Section -->
+        <section class="input-section">
+            <form id="todo-form" class="todo-form">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="todo-input" 
+                        class="todo-input" 
+                        placeholder="What needs to be done today?" 
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" id="add-btn" class="btn btn-add">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span>Add Task</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Filters Bar -->
+        <div class="filters-bar">
+            <div class="filter-tabs">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="active">Active</button>
+                <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <span id="items-count" class="items-count">0 tasks</span>
+        </div>
+
+        <!-- Task List Section -->
+        <section class="list-section">
+            <ul id="todo-list" class="todo-list">
+                <!-- Dynamically populated tasks -->
+            </ul>
+
+            <!-- Empty State Display -->
+            <div id="empty-state" class="empty-state hidden">
+                <div class="empty-icon">&#128221;</div>
+                <h3>No tasks found</h3>
+                <p>Add a new task above to start building your productivity list!</p>
+            </div>
+        </section>
+
+        <!-- Card Footer -->
+        <footer class="app-footer">
+            <span id="completed-count" class="footer-info">0 completed</span>
+            <button type="button" id="clear-completed-btn" class="btn-clear-completed hidden">Clear Completed</button>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

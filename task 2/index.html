@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card - Task 2</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Product Card Container -->
+    <div class="card-wrapper">
+        <article class="product-card">
+            
+            <!-- Category & Discount Badge -->
+            <div class="badge-container">
+                <span class="badge badge-hot">Hot Deal</span>
+                <span class="badge badge-discount">-20%</span>
+            </div>
+
+            <!-- Product Image Section -->
+            <div class="card-image-wrapper">
+                <img src="product_headphones.png" alt="AuraSound Pro Wireless Headphones" class="product-image">
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="card-content">
+                <!-- Rating -->
+                <div class="product-rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="rating-text">(4.9 / 5.0)</span>
+                </div>
+
+                <!-- Product Title -->
+                <h2 class="product-name">AuraSound Pro Headphones</h2>
+
+                <!-- Product Description -->
+                <p class="product-description">
+                    High-fidelity spatial audio, active noise cancellation, and up to 40 hours of battery life.
+                </p>
+
+                <!-- Product Price Section -->
+                <div class="price-container">
+                    <span class="current-price">$299.99</span>
+                    <span class="original-price">$374.99</span>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button type="button" class="add-to-cart-btn">
+                    <svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Add to Cart</span>
+                </button>
+            </div>
+
+        </article>
+    </div>
+
+</body>
+</html>
